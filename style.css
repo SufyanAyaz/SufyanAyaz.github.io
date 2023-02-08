@@ -1,0 +1,621 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 244, 244);
+}
+
+section.container {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    background-color: rgb(30, 30, 30);
+}
+
+ul.nav-item-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 30px;
+    border-top: 5px solid purple;
+    border-bottom: 3px solid gray;
+}
+
+div,
+li.nav-item {
+    list-style: none;
+    display: flex;
+    margin-right: 2rem;
+}
+
+a.nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: cursive;
+    color: white;
+}
+
+li.nav-item:first-child {
+    margin-right: auto;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Tangerine', cursive;
+    color: white;
+}
+
+li.nav-item {
+    color: purple;
+}
+
+li.nav-item:last-child {
+    margin-left: auto;
+}
+
+a.nav-link:hover {
+    text-decoration: underline purple;
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 0.5rem -0.4rem purple;
+    cursor: pointer;
+}
+
+a.nav-link.clicked:hover {
+    color: whitesmoke;
+    text-decoration: underline purple;
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 0.5rem -0.4rem purple;
+    cursor: pointer;
+}
+
+a.clicked {
+    color: rgb(165, 21, 165);
+    text-decoration: underline whitesmoke 2px;
+    box-shadow: 0 0.5rem 0.5rem -0.4rem whitesmoke;
+}
+
+button.contact {
+    background: none;
+    color: whitesmoke;
+    border: 2px solid;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: cursive;
+    transition: color 0.15s, border-color 0.35s, box-shadow 0.35s, transform 0.25s;
+}
+
+button.contact:hover {
+    border-color: purple;
+    color: whitesmoke;
+    box-shadow: 0 0.5rem 0.5rem -0.4rem purple;
+    transform: translateY(-0.25rem);
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    height: 95vh;
+}
+
+main,
+section {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: rgb(244, 244, 244);
+}
+
+figure.fig {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+figure.fig,
+img {
+    border-radius: 75%;
+    height: 30vh;
+    width: 30vh;
+    border: 2px solid purple;
+}
+
+figcaption.caption {
+    height: 40vh;
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+span.name {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: cursive;
+    color: gray;
+}
+
+span.occupation {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    font-family: cursive;
+    color: gray;
+}
+
+span.email {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    font-family: cursive;
+    color: rgb(165, 1, 165);
+}
+
+section.information {
+    border-left: 1px solid rgb(172, 172, 172);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0rem 1.5rem;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    line-height: 1.5;
+    text-align: left;
+}
+
+p.point {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+input[type=checkbox] {
+    accent-color: purple;
+}
+
+table.points {
+    table-layout: fixed;
+    width: 50vh;
+}
+
+label.points {
+    font-size: 1.125rem;
+    font-weight: lighter;
+    font-style: oblique;
+}
+
+table.skills {
+    table-layout: fixed;
+    width: 50vh;
+}
+
+tbody.skills {
+    border: 2px solid gray;
+}
+
+tr.skills {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+label.skills {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+progress {
+    height: 1.25rem;
+    width: 100vh;
+    border-radius: 15px;
+    background-color: gray;
+    accent-color: purple;
+}
+
+progress::-webkit-progress-bar {
+    background-color: gray;
+    border-radius: 15px;
+}
+
+progress::-webkit-progress-value {
+    background-color: purple;
+    border-radius: 15px;
+}
+
+progress::-moz-progress-bar {
+    background-color: purple;
+    border-radius: 15px;
+}
+
+table.education {
+    table-layout: auto;
+    width: 150vh;
+}
+
+span.education-name {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+p.date-place {
+    text-align: right;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(90, 89, 89);
+}
+
+p.education {
+    margin: 0;
+    padding: 0;
+}
+
+p.degree {
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-weight: bold;
+    color: rgb(90, 89, 89);
+}
+
+p.uni {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: lighter;
+    color: rgb(90, 89, 89);
+}
+
+p.credentials {
+    font-size: 1.125rem;
+    font-style: oblique;
+    font-weight: 500;
+    color: rgb(90, 89, 89);
+}
+
+table.experience {
+    table-layout: auto;
+    width: 150vh;
+}
+
+span.experience-name {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+p.experience {
+    margin: 0;
+    padding: 0;
+}
+
+p.title {
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-weight: bold;
+    color: rgb(90, 89, 89);
+}
+
+p.place {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: lighter;
+    color: rgb(90, 89, 89);
+}
+
+p.resume {
+    font-size: 1.125rem;
+    font-style: oblique;
+    font-weight: 500;
+    color: rgb(90, 89, 89);
+}
+
+a.resume {
+    color: purple;
+    text-decoration: none;
+}
+
+ul.interests {
+    margin: 1.25rem 0;
+    padding: 0;
+    font-size: 1.125rem;
+}
+
+li.interests {
+    margin: 0.5rem 0;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    font-style: oblique;
+    color: gray;
+}
+
+ul.interests-inner {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+li.interests-inner {
+    margin: 0.25rem 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(90, 89, 89);
+}
+
+section.contact-me {
+    border-left: 1px solid rgb(172, 172, 172);
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    padding: 0rem 1.5rem;
+}
+
+div.contact-me {
+    border: 2px solid rgb(172, 172, 172);
+    background-color: rgb(215, 213, 213);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    width: 60vh;
+}
+
+h1.contact-me {
+    color: rebeccapurple;
+}
+
+ul.contact-me {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+li.contact-item {
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+a.contact-me {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+
+img.contact {
+    border-radius: 0%;
+    height: 3vh;
+    width: 3vh;
+    border: 0px;
+}
+
+footer {
+    border-top: 1px solid rgb(172, 172, 172);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: oblique;
+}
+
+@media only screen and (max-width: 950px) {
+
+    a.nav-link {
+        font-size: 1.125rem;
+    }
+
+    li.nav-item:first-child {
+        font-size: 1.5rem;
+    }
+
+    button.contact {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section.figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    figure.fig,
+    img {
+        height: 25vh;
+        width: 25vh;
+    }
+
+    figcaption.caption {
+        height: 30vh;
+        width: 20vh;
+    }
+
+    span.name {
+        font-size: 1.5rem;
+    }
+
+    span.occupation {
+        font-size: 1rem;
+    }
+
+    span.email {
+        font-size: 0.5rem;
+    }
+
+    section.information {
+        border-top: 1px solid rgb(172, 172, 172);
+        height: 50vh;
+        padding: 0rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+
+    label.points {
+        font-size: 1rem;
+    }
+
+    label.skills {
+        font-size: 1rem;
+    }
+
+    progress {
+        height: 1rem;
+        width: 75vh;
+    }
+
+    table.education {
+        width: 100vh;
+    }
+
+    p.date-place {
+        font-size: 1rem;
+    }
+
+    p.degree {
+        font-size: 1.25rem;
+    }
+
+    p.uni {
+        font-size: 0.875rem;
+    }
+
+    p.credentials {
+        font-size: 1rem;
+    }
+
+    table.experience {
+        width: 100vh;
+    }
+
+    p.title {
+        font-size: 1.25rem;
+    }
+
+    p.place {
+        font-size: 0.875rem;
+    }
+
+    p.resume {
+        font-size: 1rem;
+    }
+
+    ul.interests {
+        font-size: 1rem;
+    }
+
+    main.contact-me {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section.contact-me {
+        border-top: 1px solid rgb(172, 172, 172);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 1rem 1.5rem;
+    }
+
+    div.contact-me {
+        border: 2px solid rgb(172, 172, 172);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 50vh;
+        width: 50vh;
+        padding: 0rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+
+    a.nav-link {
+        font-size: 1rem;
+    }
+
+    li.nav-item:first-child {
+        font-size: 1.25rem;
+    }
+
+    button.contact {
+        padding: 0.5rem 1rem;
+        font-size: 0.5rem;
+    }
+
+    progress {
+        height: 1rem;
+        width: 62.5vh;
+    }
+
+    table.education {
+        width: 75vh;
+    }
+
+    table.experience {
+        width: 75vh;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    li.nav-item:first-child {
+        display: none;
+    }
+
+    progress {
+        height: 1rem;
+        width: 50vh;
+    }
+
+    table.education {
+        width: 62.5vh;
+    }
+
+    table.experience {
+        width: 62.5vh;
+    }
+}
